@@ -1,0 +1,294 @@
+.header {
+    background: #0B1218;
+    display: -webkit-box;
+    color: white;
+    padding: 12px;
+}
+span {
+    color: white;
+}
+
+.header-menu {
+    background: grey;
+    width: 25px;
+    margin-top: 7px;
+    height: 25px;
+    padding: 4px;
+    border-radius: 10px;
+    position: relative;
+    top: -3px;
+}
+.hotpairs-section {
+    width: 15%;
+    margin-left: 20px;
+}
+
+.hotpairs-section span {
+    color: #808FA2;
+}
+
+.hotpairs-section svg {
+    position: relative;
+    top: 2px;
+}
+
+.header-menu svg {
+    color: white;
+    font-size: 25px;
+}
+
+.currency-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.currency-items-container {
+    display: flex;
+    align-items: center;
+    animation: carousel-animation 60s infinite linear;
+}
+
+.currency-item {
+    flex: 0 0 auto;
+    width: calc(100% / 34);
+    text-align: center;
+}
+
+.currency-item svg {
+    position: relative;
+    top: 3px;
+}
+
+@keyframes carousel-animation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.menu-carousel-section {
+    padding: 11px;
+    display: flex;
+    border-radius: 30px;
+    width: 87%;
+    z-index: 1;
+    margin-left: 30px;
+    position: relative;
+    background:rgb(20,33,41);
+}
+
+.hr-row {
+    transform: rotate(89deg);
+    width: 16px;
+    float: right;
+    position: relative;
+    top: 10px;
+    border: 1px solid #808FA2;
+}
+
+.arrow-style {
+    position: relative;
+    top: 3px
+}
+.question-header {
+    position: relative;
+    top: 3px
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: -29px;
+    background: #23323C;
+    width: 8%;
+    border-radius: 30px;
+    padding-left: 36px;
+}
+
+.live-trading {
+    display: flex;
+    align-items: center;
+    margin-left: -36px;
+    background: #D15A04;
+    width: 8%;
+    border-radius: 30px;
+    padding-left: 45px;
+}
+
+.live-trading h3 {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.profile img {
+    width: 28%;
+}
+
+.profile h3 {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.6);
+    background-image: linear-gradient(rgba(217, 217, 217, 1), rgba(217, 217, 217, 1));
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+}
+
+.controls-section svg {
+    color: black;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    margin-top: -5px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid rgba(230, 230, 230, 1);
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+    cursor: all-scroll;
+}
+
+.controls-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:rgb(226 226 226);
+    width: 0%;
+    padding: 19px;
+    border-radius: 50px;
+    position: absolute;
+    gap: 17px;
+    bottom: 20px;
+    z-index: 99999;
+    right: 15px;
+}
+
+input[type="range"] {
+    width: 2px;
+    background:rgba(217, 217, 217, 1);
+    height: 64px;
+    writing-mode: vertical-rl;
+}
+
+.colors-picker-section {
+    border-radius: 12px;
+    background: #d6d6d6;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16);
+    padding: 12px;
+    position: absolute;
+    display: flex;
+    gap: 4px;
+    margin: 0 auto;
+    align-items: center;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    width: 51%;
+}
+
+.colors-picker-section div {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.colors-picker-section span {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+}
+
+.colors-picker-section button {
+    background: #0364BE;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+}
+
+.colors-picker-section > div.selected {
+    border: 2px solid black;
+}
+
+.modal {
+    display: inline-flex;
+    padding: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    top: 12%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 22%;
+    height: 63%;
+    margin: 0 auto;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0 1px 1px 1px rgb(0 0 0 / 52%);
+}
+
+.wallet-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 2px solid #E7E7E1;
+    height: 50px;
+    padding-left: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.close-modal-btn {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: -25px;
+    left: 15px;
+}
+
+.wallet-card.selected-wallet {
+    background: rgba(228, 95, 53, 1);
+    color: white;
+}
+
+.modal h1 {
+    padding-top: 5px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.modal p {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 25px;
+    font-family: sans-serif;
+}
+
+.crypto-wallet span {
+    color: rgba(228, 95, 53, 1);
+    font-weight: 700;
+    font-family: sans-serif;
+    position: relative;
+    top: 15px;
+}
